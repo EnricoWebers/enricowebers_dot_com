@@ -1,3 +1,6 @@
-runtime: php83
-env: flex 
+  runtime: php
+  env: standard
 
+  runtime_config:
+      operating_system: "ubuntu22"
+      document_root: "web"
