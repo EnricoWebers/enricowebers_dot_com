@@ -1,6 +1,7 @@
 <?php 
 
     $req_url = 'https://v6.exchangerate-api.com/v6/76852436da9860dd554a1870/latest/EUR';
+    echo $req_url;
     $response_json = file_get_contents($req_url);
 
     $fxText = $response_json;
