@@ -1,33 +1,6 @@
-<<<<<<< HEAD
-  runtime: php
-  env: standard
-
-  runtime_config:
-      operating_system: "ubuntu22"
-      document_root: "web"
-=======
 runtime: php83
-env: flex 
+env: standard
 
 runtime_config:
     operating_system: "ubuntu22"
-    document_root: enricowebers_dot_com
-
-automatic_scaling:
-  max_instances: 1
-  min_instances: 0
-
-handlers:
-  - url: /css
-    static_dir: css
-    secure: always
-    redirect http_response_code: 301
-
-  - url: .*
-    script: auto
-    secure: always
-    redirect http_response_code: 301
-
-env_variables:
-  GOOGLE_APPLICATION_CREDENTIALS: permit_me.json
->>>>>>> ce9aaf76465cf72f59c92935bf4c4e98de6d0440
+    document_root: "web"
