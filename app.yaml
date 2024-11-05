@@ -1,24 +1,3 @@
 runtime: php83
 env: flex 
 
-runtime_config:
-    operating_system: "ubuntu22"
-    document_root: enricowebers_dot_com
-
-automatic_scaling:
-  max_instances: 1
-  min_instances: 0
-
-handlers:
-  - url: /css
-    static_dir: css
-    secure: always
-    redirect http_response_code: 301
-
-  - url: .*
-    script: auto
-    secure: always
-    redirect http_response_code: 301
-
-env_variables:
-  GOOGLE_APPLICATION_CREDENTIALS: permit_me.json
